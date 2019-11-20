@@ -1,0 +1,782 @@
+{
+  "settings": {
+    "name": "1",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.11.4",
+    "siteFonts": [],
+    "uniqCompNum": 35,
+    "versionPublish": "4.11.4",
+    "screenshot": "screenshot.png",
+    "favicon": "",
+    "": "on",
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": "undefined"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Richard Branson ",
+        "meta_descr": "I think it’s more often than not that you’re correct. There are exceptions to the rule. I mean for instance, when we had a record company in Germany many years ago, the person who actually ran the record company was a true C.E.O. He was not an entrepreneur. ",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "header2",
+          "_customHTML": "<section group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n         'mbr-fullscreen': fullScreen,\n         'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Полный экран\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Стрелка\" name=\"showArrow\">\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Кнопки\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"@PROJECT_PATH@/assets/images/pzjqlo80k4u-1280x839.jpeg\" parallax selected>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#073B4C\">\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#c1c1c1\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    ИНТРО В ПОЛНЫЙ ЭКРАН\n                </h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Красивые мобильные сайты\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Щелкните любой текст для редактирования содержания или стиля. Выберите текст для вставки ссылки. Нажмите значок шестеренки в правом верхнем углу, чтобы скрыть/показать кнопки, текст, название и изменить фон блока. Нажмите красную кнопку \"+\" в правом нижнем углу, чтобы добавить новый блок. Используйте меню вверху слева для создания новых страниц, сайтов и добавления тем.\n                </p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n                    <a class=\"btn btn-md btn-secondary\" href=\"https://mobirise.co\">ПОДРОБНЕЕ</a>\n                    <a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.co\">ДЕМО</a>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "rGLD5KNHPh",
+          "_anchor": "header2-q",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h3": {
+              "font-weight": "300"
+            },
+            ".card-img": {
+              "width": "initial",
+              ".mbr-iconfont": {
+                "font-size": "48px",
+                "padding-right": "1rem"
+              }
+            },
+            ".media-container-row": {
+              "word-wrap": "break-word",
+              "padding-bottom": "2rem",
+              "min-height": "100%"
+            },
+            ".media": {
+              "margin": "initial",
+              "align-items": "center",
+              "-webkit-align-items": "center"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".mbr-text": {
+              "color": "#767676"
+            },
+            ".media-container-column": {
+              "display": "-webkit-flex",
+              "flex-direction": "column",
+              "-webkit-flex-direction": "column",
+              "& when (@reverseContent)": {
+                "flex-direction": "column-reverse",
+                "-webkit-flex-direction": "column-reverse"
+              }
+            },
+            ".mbr-al-i-c": {
+              "align-items": "center"
+            }
+          },
+          "_name": "features14",
+          "_customHTML": "<section class=\"features14\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Заголовок карты\" name=\"showCardTitle\" checked>\n        <input type=\"checkbox\" title=\"Субтитры\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Иконки\" name=\"showIcons\">\n        <input type=\"checkbox\" title=\"Медиа Снизу/Сверху\" name=\"reverseContent\">\n\n       <input type=\"range\" inline title=\"Размер медиа\" name=\"mediaSize\" min=\"10\" max=\"100\" step=\"1\" value=\"60\">\n\n        <select title=\"Столбцы\" name=\"cardsAmount\">\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background5.jpg\" parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container align-center\">\n        <h2 class=\"mbr-section-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Richard Branson                  \n</b><div><br></div></h2>\n        <h3 class=\"mbr-section-subtitle pb-5 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n            Щелкните любой текст или значок, чтобы отредактировать или изменить его стиль. Используйте параметры блоков для скрытия/отображения текста, значков, изменения размера или положения.\n        </h3>\n        <div class=\"media-container-column\">\n            <div class=\"row justify-content-center\">\n                <div class=\"card p-4 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3', 'mbr-al-i-c': !showCardTitle}\">\n                    <div class=\"media pb-3\">\n                        <div class=\"card-img align-self-center\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"mbri-bootstrap mbr-iconfont\"></span>\n                        </div>\n                        <div class=\"media-body\">\n                            <h4 class=\"card-title py-2 align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title\">Now, your title — your official title, as far as I can tell, is “Founder, Virgin Group.” In addition to that, are you the C.E.O. of anything?</h4>\n                        </div>\n                    </div>                \n                    <div class=\"card-box align-left\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                           I used to be. But I’ve delegated pretty well all the C.E.O. roles. And I actually believe that people should delegate early on in their businesses, so they can start thinking about the bigger picture. If I’m ever giving a talk to a group of young businesspeople, I will tell them you know, go and take a week out to find somebody as good or better than yourself. Put yourself out of business, and let them get on and run your business day to day, and then you can start dealing with the bigger issues, and you can take the company forward into bigger areas, and you can — maybe if you’re an entrepreneur, you can start your second business or your third business. And so I think too many young entrepreneurs want to cling on to everything, and they’re not good delegators.\n                        </p>\n                    </div>\n                </div>\n\n                <div class=\"card p-4 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3', 'mbr-al-i-c': !showCardTitle}\">\n                <div class=\"media pb-3\">\n                    <div class=\"card-img align-self-center\" mbr-if=\"showIcons\">\n                        <span mbr-icon class=\"mbri-responsive mbr-iconfont\"></span>\n                    </div>\n                    <div class=\"media-body\">\n                        <h4 class=\"card-title py-2 align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title, .card-img\">Do you see that split in that way? Or do you think that’s a little bit of a misperception?</h4>\n                    </div>\n                </div>\n                    <div class=\"card-box align-left\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            I think it’s more often than not that you’re correct. There are exceptions to the rule. I mean for instance, when we had a record company in Germany many years ago, the person who actually ran the record company was a true C.E.O. He was not an entrepreneur. He was great with people. He didn’t want to stray from his job of running the record company. And he did a fine job. Whereas in France, we had a guy called Patrick Zelnik, who was a C.E.O. but he was also an entrepreneur and he took the record company into Virgin Megastores, into all sorts of different businesses, a bit like myself. And he pulled it off. But you know, once he’d become a true entrepreneur, you know, the two of us sat down, and he then just found other people to be the C.E.O.’s who were perhaps less entrepreneurial, who would stick to their onions and do the day to day running well.&nbsp;</p>\n                    </div>\n                </div>\n\n                <div class=\"card p-4 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3', 'mbr-al-i-c': !showCardTitle}\" mbr-if=\"cardsAmount>2\">\n                <div class=\"media pb-3\">\n                    <div class=\"card-img align-self-center\" mbr-if=\"showIcons\">\n                        <span mbr-icon class=\"mbri-upload mbr-iconfont\"></span>\n                    </div>\n                    <div class=\"media-body\">\n                        <h4 class=\"card-title py-2 align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title, .card-img\">know that once, when you were asked how involved you are in the mechanics of your businesses, you said, “I don’t understand these things completely”&nbsp;</h4>\n                    </div>\n                </div>\n                    <div class=\"card-box align-left\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                           Well, I’m quite badly dyslexic. And really bizarrely, it was on my 50th birthday that I was having a meeting with a group of executives. And I asked the question, “Is that good news or bad news?” when some figures were given to me. And one of the executives took me outside of the room and he had already prepared himself for this: he had a — some coloring pencils and he had a blank sheet of paper. He colored in this piece of paper blue, and then he put a net — a fishing net amongst it. And he put little fish in the fishing net. And he said, “Richard, I don’t think you know the difference between net and gross, and let me simplify it for you. The fish in the net are your profit. And the — all the fish that are not on the net are your gross turnover.” And hey, presto, I got it. And ever since then, I’ve been very swankily saying, “net profit and gross turnover.” \n                        </p>\n                    </div>\n                </div>\n\n                <div class=\"card p-4 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4','col-lg-4': cardsAmount == '3', 'mbr-al-i-c': !showCardTitle}\" mbr-if=\"cardsAmount>3\">\n                <div class=\"media pb-3\">\n                    <div class=\"card-img align-self-center\" mbr-if=\"showIcons\">\n                        <span mbr-icon class=\"mbri-sites mbr-iconfont\"></span>\n                    </div>\n                    <div class=\"media-body\">\n                        <h4 class=\"card-title py-2 align-left mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title, .card-img\">\n                            Безлимитно\n                        </h4>\n                    </div>\n                </div>\n                    <div class=\"card-box align-left\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                           Mobirise дает вам свободу разрабатывать столько сайтов, сколько вам нравится, при том что это настольное приложение.\n                        </p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"media-container-row image-row\">\n                <div class=\"mbr-figure\" mbr-style=\"{'width': mediaSize + '%'}\">\n                    <img src=\"@PROJECT_PATH@/assets/images/richard-branson-virgin-galactic-to-travel-to-space-e1527414191758-730x487.jpg\" alt=\"Mobirise\" title>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rH1KAKWzFw",
+          "_anchor": "features14-y",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".line": {
+              "background-color": "@lineColor",
+              "color": "@lineColor",
+              "align": "center",
+              "height": "2px",
+              "margin": "0 auto"
+            },
+            ".section-text": {
+              "padding": "2rem 0",
+              "text-align": "left"
+            },
+            ".inner-container": {
+              "margin": "0 auto"
+            },
+            "@media (max-width: 768px)": {
+              ".inner-container": {
+                "width": "100% !important"
+              }
+            }
+          },
+          "_name": "content10",
+          "_customHTML": "<section class=\"mbr-section article content10\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Ширина текста\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"1\" value=\"66\">\n        <input type=\"range\" inline title=\"Ширина линии\" name=\"lineLength\" min=\"10\" max=\"100\" step=\"1\" value=\"25\">\n        <input type=\"color\" title=\"Цвет линии\" name=\"lineColor\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#2e2e2e\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n            <div class=\"section-text align-center mbr-white mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".section-text\" mbr-text><b>Now, maybe it’s — maybe you’re a fluke, or maybe it’s a bit of a generational thing, maybe the world has just changed a lot. But you know, management has obviously become very, very professionalized in the last 20 or 30 years. And you know, M.B.A. programs are just exploding everywhere, there’s so — and so now, to be the C.E.O. of even a very small company, one is expected to be extremely well drilled in all the things that it sounds like you’ve really never had to be very good at. Do you think that that professionalization of leadership is in some ways a mistake, that someone like you had a lot of instinct and energy and appreciation for what you are trying to do with the company, and that some of that gets killed off by this professionalization of the leadership class?</b><br><br><i>I think it can be. I think if you feel a little bit lost in a company because of that should spur you on just to get out and run your own company. I mean, I’ve never had to report to anybody since I was — well, since I left school at 15. And that’s a luxury. And you know, I can do foolish things like, “Let’s start a spaceship company.” Which, you know, if I was working for a public company or a normal company, I would never have got it through. And so the great thing about being an entrepreneur — I think entrepreneurs are a class unto themselves. You know, they do not need that professionalism. They need a passion, absolute passion for what they’re doing. They need an absolute belief in what they’re doing. They need to be wonderful motivators of people. Inspirational leaders. And you know, those are sort of the key things that they need.</i></div>\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n        </div>\n    </div>\n</section>",
+          "_cid": "rH1K95pbhO",
+          "_anchor": "content10-v",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h2": {
+              "text-align": "center"
+            },
+            "h3": {
+              "text-align": "center",
+              "font-weight": "300"
+            },
+            "p": {
+              "color": "#767676"
+            },
+            "img": {
+              "object-fit": "cover"
+            },
+            ".block-content": {
+              "display": "-webkit-flex",
+              "flex-direction": "column",
+              "-webkit-flex-direction": "column",
+              "flex-basis": "100%",
+              "-webkit-flex-basis": "100%"
+            },
+            ".mbr-figure": {
+              "align-self": "flex-start",
+              "-webkit-align-self": "flex-start",
+              "flex-shrink": "0",
+              "-webkit-flex-shrink": "0"
+            },
+            ".media-container-row": {
+              "word-wrap": "break-word",
+              "word-break": "break-word"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".card-title": {
+              "font-weight": "500"
+            },
+            ".card-img": {
+              "text-align": "inherit"
+            },
+            ".card-img span": {
+              "font-size": "48px",
+              "color": "#707070"
+            },
+            "@media (min-width: 992px)": {
+              ".mbr-figure": {
+                "padding-right": "2rem",
+                "padding-left": "2rem",
+                "height": "100%"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".mbr-figure": {
+                "& when (@showTitle), (@showText)": {
+                  "padding-bottom": "2rem"
+                },
+                "& when not (@showTitle) and not (@showText)": {
+                  "padding-bottom": "1rem"
+                },
+                "padding-top": "1rem"
+              }
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".block-content": {
+                "flex-direction": "row",
+                "-webkit-flex-direction": "row",
+                "text-align": "center",
+                ".card": {
+                  "flex-basis": "100%",
+                  "-webkit-flex-basis": "100%"
+                }
+              },
+              ".card:nth-child(1) when (@cardsAmount > \"2\")": {
+                "padding-bottom": "0!important"
+              }
+            },
+            ".mbr-section-text": {
+              "text-align": "left"
+            }
+          },
+          "_name": "features12",
+          "_customHTML": "<section class=\"features12\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Иконки\" name=\"showIcons\">\n        <input type=\"range\" inline title=\"Размер медиа\" name=\"mediaSize\" min=\"10\" max=\"60\" step=\"1\" value=\"50\">\n        <select title=\"Число карт\" name=\"cardsAmount\">\n            <option value=\"2\" selected>2</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background5.jpg\" parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title pb-2 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n            Картинка между столбцами\n        </h2>\n        <h3 class=\"mbr-section-subtitle pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n            Щелкните любой текст или значок, чтобы изменить стиль. Используйте параметры блока для скрытия/отображения текста, значков или изменения размера.\n        </h3>\n\n        <div class=\"media-container-row pt-5\">\n            <div class=\"block-content align-right\">\n                <div class=\"card pl-3 pr-3\" mbr-class=\"{'pb-5':cardsAmount > 2}\">\n                    <div class=\"mbr-card-img-title\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                             <span mbr-icon class=\"mbri-upload mbr-iconfont\"></span>\n                        </div>\n                        <div class=\"mbr-crt-title\">\n                            <h4 class=\"card-title py-2 mbr-crt-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-crt-title\">\n                                Хост в любом месте                     \n                            </h4>\n                        </div>\n                    </div>                \n\n                    <div class=\"card-box\">\n                        <p class=\"mbr-text mbr-section-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text\"><b>\n                            </b><br><br><br><br><br><br><br><br><br><br><br><b>Can you talk a little bit more about being a wonderful motivator of people? By all reports, everything I read about you, it sounds as though most of the people who work with you and for you really like you. And that you — I don’t know about, go out of your way to treat your co-workers well, but you have a lot of policies that are very employee-friendly and so on. I think a lot of people out there, bosses — whether they’re C.E.O.’s or down — they’d like to be like that, and they’d like to motivate people. But it’s hard. Do you have any secret advice?\n                        </b></p>\n                    </div>\n                </div>\n\n                <div class=\"card pl-3 pr-3\" mbr-if=\"cardsAmount > 2\">\n                    <div class=\"mbr-card-img-title\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"mbri-drag-n-drop2 mbr-iconfont\"></span>\n                        </div>\n                        <div class=\"mbr-crt-title\">\n                            <h4 class=\"card-title py-2 mbr-crt-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-crt-title\">\n                                Легкий и простой в использовании\n                            </h4>\n                        </div>\n                    </div>\n                    <div class=\"card-box\">\n                        <p class=\"mbr-text mbr-section-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text\">\n                            Просто поместите блоки на страницу, отредактируйте содержимое и можете публиковать - не требуется никаких технических навыков.\n                        </p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"mbr-figure m-auto\" mbr-style=\"{'width': mediaSize + '%'}\">\n                <img src=\"@PROJECT_PATH@/assets/images/999ddb6c6eb5a30782e0c920902ee198-800x1000.jpg\" alt=\"Mobirise\" title>\n            </div>\n\n            <div class=\"block-content align-left\">\n                <div class=\"card pl-3 pr-3\" mbr-class=\"{'pb-5':cardsAmount > 2}\">\n                    <div class=\"mbr-card-img-title\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                             <span mbr-icon class=\"mbri-features mbr-iconfont\"></span>\n                        </div>\n                        <div class=\"mbr-crt-title\">\n                            <h4 class=\"card-title py-2 mbr-crt-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-crt-title\">\n                                Более 400 уникальных блоков\n                            </h4>\n                        </div>\n                    </div>                \n\n                    <div class=\"card-box\">\n                        <p class=\"mbr-text mbr-section-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text\"><i>\n                            Well I mean, I think, I find that some American companies are anything but good at motivating people.  And I find that hard to understand, because if you’ve got a happy, motivated group of people you’re working with, you can achieve anything. And you know, you can ride the good times together, you can ride the bad times together. If you treat your people badly, they’re not going to go that extra mile when things get tough. I just think you should treat your people in the same way that you treat your family. I mean, however you would treat your brothers and sisters or your children, the same should apply exactly to the people you work with. And it’s so much more pleasant. I mean you know, I mean a lot of our time we spend at work, and work should be fun. It should be enjoyable. And you should also have policies that follow through with that, so you know, if people want to work from home, let them work from home. If people want to work from home on Fridays and Mondays, let them work from home Fridays and Mondays. If people want to take a month off and go around the world, let them take a month off and go around the world. I mean, people will give everything back if you give them the flexibility and treat them like adults.</i></p>\n                    </div>\n                </div>\n\n                <div class=\"card pl-3 pr-3\" mbr-if=\"cardsAmount > 2\">\n                    <div class=\"mbr-card-img-title\">\n                        <div class=\"card-img pb-3\" mbr-if=\"showIcons\">\n                            <span mbr-icon class=\"mbri-sites mbr-iconfont\"></span>\n                        </div>\n                        <div class=\"mbr-crt-title\">\n                            <h4 class=\"card-title py-2 mbr-crt-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-crt-title\">\n                                Безлимитно\n                            </h4>\n                        </div>\n                    </div>\n                    <div class=\"card-box\">\n                        <p class=\"mbr-text mbr-section-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-section-text\">\n                            Mobirise дает вам свободу разрабатывать столько сайтов, сколько вам нравится, при том что это настольное приложение.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rH1K3po1bO",
+          "_anchor": "features12-u",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content3",
+          "_customHTML": "<section mbr-id=\"_anchor\" mbr-paddings class=\"mbr-section article content3\">\n      \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) --> \n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"4\">\n        <select title=\"Число карт\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n        </select>\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->     \n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"row col-12\" mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\">\n                <div class=\"col-12 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-class=\"{'col-md-6': cardsAmount == 2, 'col-md-12': cardsAmount == 1, 'col-md-4': cardsAmount == 3}\">\n                     <p><b>I hear you and I so want to believe that that’s the way to be. But the sceptic in me just thinks well, if every company let everybody work from home Fridays and Mondays and let them take a week off and go take balloon trips or climb a mountain that, you know, productivity would plummet and economy would fall apart. Why do people not exploit that, at your firm, at least?</b></p>\n                </div>\n                <div class=\"col-12 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-class=\"{'col-md-6': cardsAmount == 2, 'col-md-4': cardsAmount == 3}\" mbr-if=\"cardsAmount > 1\">\n                     <p><i>Because they feel trusted.  And also, look — let’s just look at this business of forcing people to come to an office. First of all, you’ve got maybe an hour or an hour and a half of travel time in the morning, another hour and a half of travel time in the evening. And, you know, when you’re at the office, it’s important that you say hello to everybody and that you’re friendly with everybody, so you use up another hour or two, you know, socializing with people. Then, because you’re not at home, you need to communicate with your family. So you spend another bit of time communicating with your family. And so the day carries on and you might get a couple hours of work done. If you’re at home, you know, you wake up. You can spend a bit of time with your family. And be a proper father, which is perhaps the most important — or mother — most important things that we can do in our life. But you can also find the time to get whatever your job is done, because you’ve got another four or five hours free to do it. And you know, we’ve never been let down by people that we’ve given that trust to. I think treating people as adults, giving people trust, is so important. And I mean — I’ll just give you one other example — slightly different. But I mean, we have a policy of giving ex-prisoners a second chance, and taking on as many people who’ve been imprisoned as possible into our Virgin companies.&nbsp;</i></p>\n                </div>\n                <div class=\"col-12 col-md-4 mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-article data-app-selector=\".mbr-text\" data-multiline mbr-if=\"cardsAmount > 2\">\n                     <p>Сделайте свой собственный сайт в несколько кликов! Mobirise помогает сократить время разработки, предоставляя вам гибкий редактор сайтов с интерфейсом перетаскивания. Mobirise-конструктор создает отзывчивый, адаптивный сайт в несколько кликов и является одним из самых простых инструментов разработки сайтов, доступных сегодня. Это дает свободу развивать столько сайтов, сколько нравится, при том что это настольное приложение.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rH1KbBgrEG",
+          "_anchor": "content3-w",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".card-box": {
+              "padding-top": "2rem"
+            },
+            ".card-wrapper": {
+              "height": "100%"
+            }
+          },
+          "_name": "features2",
+          "_customHTML": "<section class=\"features2\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\" checked>\n        <select title=\"Число карт\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background5.jpg\" parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    \n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/pri-56104295-644x479.jpg\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">You have started and sold and shut down and grown many, many, many companies. Can you talk just for a moment about your overall win/loss record? I’m curious to know if you actually have ever tallied up the successes versus failures.</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><i>&nbsp;I haven’t. I mean we’ve never had a company go bankrupt. Because our reputation is everything. And we believe that if you can afford to, if a company is not working out, you must settle all your debts. And so you know, we’ve never had a bankruptcy, and that’s in 50 years, so we’re proud of that. And I think that’s really helped keep the reputation of Virgin. But obviously over 50 years things change. So you know, give you a very good example. We started off with record shops. And we built maybe 300 record shops around the world, Virgin Megastores. And then iTunes came along, and the internet came along, and people, sadly, didn’t see the need to go into record shops anymore. And so, we either sold or closed down most of those 300 record shops. There’s still a few left in the Middle East but that’s about it now. But, you know, that spurred us on to move into mobile phones and into new technology that was evolving.&nbsp;</i></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/richard-branson-wallpaper-676x380.jpg\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box \">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">Now, a lot of the businesses you’ve been in, including some of the ones you just mentioned there, are not businesses that you build from scratch, or even really necessarily run from the ground up, but they’re more partnerships. And the way you do business — and the Virgin Group is a little bit different than many other firms — you call it branded venture capital.</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\"><i>Well, I think just to be slightly more accurate, we’ve generally speaking started by owning pretty well every company. So we start with 100 percent ownership in the companies. And then over the years, in order to then invest in new entrepreneurial ventures that I may have come up with, we’ll sell shares in the companies that we started. And sometimes we’ve sold 100 percent. But we keep a brand royalty in everything. So — and we keep in touch with the Virgin brand, we monitor the Virgin brand. We have a team of people who monitor it to make absolutely certain that anybody who’s running a Virgin company respects the fact that our reputation, for all of us, is all we’ve got. So generally speaking we’ll start with 100 percent ownership and then maybe over the years we’ll settle down and then put that money into new ventures.</i></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"@PROJECT_PATH@/assets/images/mzbczbn7kym-676x455.jpg\" alt=\"Mobirise\" title>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">Thank you for that clarification. Was that the case with Virgin Mobile? Was that a little bit different or no?</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">So Virgin Mobile, we own 50 percent of the company. So with Virgin Mobile, we didn’t have the resources to build out a network, and we also didn’t think that would be our strength. What our strength was, was marketing to the public, and the brand, and the whole proposition. So we did a deal with a company called T-Mobile and they took 50 percent of the company. They gave their infrastructure — their masks. And then we ran it on a day-to-day basis. We put the team in. And yeah, we built a pretty formidably successful company. And then we merged it with the biggest cable company in the U.K. And it became Virgin Media. So that’s how that worked out. And I actually — my new book, Finding My Virginity, I tell the story of how our partners in that one actually were, in our opinion, naughty boys and tried to steal the company from us. But anyway, we fortunately won quite a big court case on that.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-img\">\n                        <img src=\"../_images/background4.jpg\" alt=\"Mobirise\">\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Безлимитно\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            Mobirise дает вам свободу разрабатывать столько сайтов, сколько вам нравится, при том что это настольное приложение. <a href=\"https://mobirise.co\">Подробнее...</a>\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rH1KfPwfyC",
+          "_anchor": "features2-x",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".row-links": {
+              "width": "100%",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
+            },
+            ".social-row": {
+              "width": "100%",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
+            },
+            ".media-container-row": {
+              "-webkit-flex-direction": "column",
+              "flex-direction": "column",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              ".foot-menu": {
+                "list-style": "none",
+                "display": "flex",
+                "-webkit-justify-content": "center",
+                "justify-content": "center",
+                "-webkit-flex-wrap": "wrap",
+                "flex-wrap": "wrap",
+                "padding": "0",
+                "margin-bottom": "0",
+                "li": {
+                  "padding": "0 1rem 1rem 1rem",
+                  "p": {
+                    "margin": "0"
+                  }
+                }
+              },
+              ".social-list": {
+                "padding-left": "0",
+                "margin-bottom": "0",
+                "list-style": "none",
+                "display": "flex",
+                "-webkit-flex-wrap": "wrap",
+                "flex-wrap": "wrap",
+                "-webkit-justify-content": "flex-end",
+                "justify-content": "flex-end",
+                ".mbr-iconfont-social": {
+                  "font-size": "1.5rem",
+                  "color": "#ffffff"
+                },
+                ".soc-item": {
+                  "margin": "0 .5rem"
+                },
+                "a": {
+                  "margin": "0",
+                  "opacity": ".5",
+                  "-webkit-transition": ".2s linear",
+                  "transition": ".2s linear",
+                  "&:hover": {
+                    "opacity": "1"
+                  }
+                },
+                "@media (max-width: 767px)": {
+                  "-webkit-justify-content": "center",
+                  "justify-content": "center"
+                }
+              },
+              ".row-copirayt": {
+                "word-break": "break-word",
+                "width": "100%",
+                "p": {
+                  "width": "100%"
+                }
+              }
+            }
+          },
+          "_name": "footer7",
+          "_customHTML": "<section group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Пункты меню\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Соцсети\" name=\"socialItems\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Эффект появления\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Цвет фона\" value=\"#2e2e2e\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"row row-links\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu\" mbr-list mbr-list-grow=\"menuItems\">\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"index.html\" class=\"text-white\">Home</a><br></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"policy.html\" class=\"text-white\">Private Policy</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"cookie.html\" class=\"text-white\">Cookie Policy</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"terms.html\" class=\"text-white\">Terms</a><br></li>\n                    \n                </ul>\n            </div>\n            <div class=\"row social-row\" mbr-if=\"socialItems > 0\">\n                <div mbr-list mbr-list-grow=\"socialItems\" class=\"social-list align-right pb-2\">\n                    <div class=\"soc-item\">\n                        <a href=\"https://twitter.com/\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-twitter socicon\"></span>\n                        </a>\n                    </div>\n                    \n                    \n                    \n                    \n                    \n                </div>\n            </div>\n            <div class=\"row row-copirayt\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\">\n                    © Copyright 2019 - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rGLEgP1xM8",
+          "_anchor": "footer7-s",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    },
+    "terms.html": {
+      "settings": {
+        "meta_descr": "I think it’s more often than not that you’re correct. There are exceptions to the rule. I mean for instance, when we had a record company in Germany many years ago, the person who actually ran the record company was a true C.E.O. He was not an entrepreneur. ",
+        "title": "Terms & Conditions",
+        "order": 4
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Кнопки\" name=\"showButtons\">\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\"><br>Terms &amp; Conditions</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\">Owns and operate this Website. This document governs your relationship with (\"Website\"). Access to and use of this Website and the products and services available through this Website (collectively, the \"Services\") are subject to the following terms, conditions and notices (the \"Terms of Service\"). By using the Services, you are agreeing to all of the Terms of Service, as may be updated by us from time to time. You should check this page regularly to take notice of any changes we may have made to the Terms of Service.   Access to this Website is permitted on a temporary basis, and we reserve the right to withdraw or amend the Services without notice. We will not be liable if for any reason this Website is unavailable at any time or for any period. From time to time, we may restrict access to some parts or all of this Website. This Website may contain links to other websites (the \"Linked Sites\"), which are not operated by . has no control over the Linked Sites and accepts no responsibility for them or for any loss or damage that may arise from your use of them. Your use of the Linked Sites will be subject to the terms of use and service contained within each such site.   \n<div>&nbsp; Privacy Policy Our privacy policy, which sets out how we will use your information, can be found at [Privacy Policy Link]. By using this Website, you consent to the processing described therein and warrant that all data provided by you is accurate.   Prohibitions You must not misuse this Website. You will not: commit or encourage a criminal offense; transmit or distribute a virus, trojan, worm, logic bomb or any other material which is malicious, technologically harmful, in breach of confidence or in any way offensive or obscene; hack into any aspect of the Service; corrupt data; cause annoyance to other users; infringe upon the rights of any other person's proprietary rights; send any unsolicited advertising or promotional material, commonly referred to as \"spam\"; or attempt to affect the performance or functionality of any computer facilities of or accessed through this Website. Breaching this provision would constitute a criminal offense and will report any such breach to the relevant law enforcement authorities and disclose your identity to them.   \n</div><div>&nbsp; We will not be liable for any loss or damage caused by a distributed denial-of-service attack, viruses or other technologically harmful material that may infect your computer equipment, computer programs, data or other proprietary material due to your use of this Website or to your downloading of any material posted on it, or on any website linked to it.   \n</div><div>&nbsp; Intellectual Property, Software and Content The intellectual property rights in all software and content (including photographic images) made available to you on or through this Website remains the property of or its licensors and are protected by copyright laws and treaties around the world. All such rights are reserved by and its licensors. You may store, print and display the content supplied solely for your own personal use. You are not permitted to publish, manipulate, distribute or otherwise reproduce, in any format, any of the content or copies of the content supplied to you or which appears on this Website nor may you use any such content in connection with any business or commercial enterprise.   Terms of Sale By placing an order you are offering to purchase a product on and subject to the following terms and conditions. All orders are subject to availability and confirmation of the order price. Dispatch times may vary according to availability and subject to any delays resulting from postal delays or force majeure for which we will not be responsible. \n</div><div>&nbsp; &nbsp;In order to contract with you must be over 18 years of age and possess a valid credit or debit card issued by a bank acceptable to us. retains the right to refuse any request made by you. If your order is accepted we will inform you by email and we will confirm the identity of the party which you have contracted with. This will usually be or may in some cases be a third party. Where a contract is made with a third party is not acting as either agent or principal and the contract is made between yourself and that third party and will be subject to the terms of sale which they supply you. When placing an order you undertake that all details you provide to us are true and accurate, that you are an authorized user of the credit or debit card used to place your order and that there are sufficient funds to cover the cost of the goods. The cost of foreign products and services may fluctuate. All prices advertised are subject to such changes.   \n</div><div>&nbsp; (a) Our Contract When you place an order, you will receive an acknowledgement e-mail confirming receipt of your order: this email will only be an acknowledgement and will not constitute acceptance of your order. A contract between us will not be formed until we send you confirmation by e-mail that the goods which you ordered have been dispatched to you. Only those goods listed in the confirmation e-mail sent at the time of dispatch will be included in the contract formed.    \n</div><div>&nbsp; &nbsp;(b) Pricing and Availability Whilst we try and ensure that all details, descriptions and prices which appear on this Website are accurate, errors may occur. If we discover an error in the price of any goods which you have ordered we will inform you of this as soon as possible and give you the option of reconfirming your order at the correct price or cancelling it. If we are unable to contact you we will treat the order as cancelled. If you cancel and you have already paid for the goods, you will receive a full refund. Delivery costs will be charged in addition; such additional charges are clearly displayed where applicable and included in the 'Total Cost'.\n</div><div>&nbsp; &nbsp; &nbsp;(c) Payment Upon receiving your order we carry out a standard authorization check on your payment card to ensure there are sufficient funds to fulfil the transaction. Your card will be debited upon authorisation being received. The monies received upon the debiting of your card shall be treated as a deposit against the value of the goods you wish to purchase. Once the goods have been despatched and you have been sent a confirmation email the monies paid as a deposit shall be used as consideration for the value of goods you have purchased as listed in the confirmation email. \n</div><div>&nbsp; &nbsp;Disclaimer of Liability The material displayed on this Website is provided without any guarantees, conditions or warranties as to its accuracy. Unless expressly stated to the contrary to the fullest extent permitted by law and its suppliers, content providers and advertisers hereby expressly exclude all conditions, warranties and other terms which might otherwise be implied by statute, common law or the law of equity and shall not be liable for any damages whatsoever, including but without limitation to any direct, indirect, special, consequential, punitive or incidental damages, or damages for loss of use, profits, data or other intangibles, damage to goodwill or reputation, or the cost of procurement of substitute goods and services, arising out of or related to the use, inability to use, performance or failures of this Website or the Linked Sites and any materials posted thereon, irrespective of whether such damages were foreseeable or arise in contract, tort, equity, restitution, by statute, at common law or otherwise.\n</div><div>&nbsp; &nbsp; &nbsp;This does not affect 's liability for death or personal injury arising from its negligence, fraudulent misrepresentation, misrepresentation as to a fundamental matter or any other liability which cannot be excluded or limited under applicable law.\n</div><div>&nbsp; &nbsp; &nbsp;Linking to this Website You may link to our home page, provided you do so in a way that is fair and legal and does not damage our reputation or take advantage of it, but you must not establish a link in such a way as to suggest any form of association, approval or endorsement on our part where none exists. You must not establish a link from any website that is not owned by you. This Website must not be framed on any other site, nor may you create a link to any part of this Website other than the home page. We reserve the right to withdraw linking permission without notice.   \n</div><div>&nbsp; Disclaimer as to ownership of trade marks, images of personalities and third party copyright Except where expressly stated to the contrary all persons (including their names and images), third party trade marks and content, services and/or locations featured on this Website are in no way associated, linked or affiliated with and you should not rely on the existence of such a connection or affiliation. Any trade marks/names featured on this Website are owned by the respective trade mark owners. Where a trade mark or brand name is referred to it is used solely to describe or identify the products and services and is in no way an assertion that such products or services are endorsed by or connected to .\n</div><div>&nbsp; &nbsp; &nbsp;Indemnity You agree to indemnify, defend and hold harmless , its directors, officers, employees, consultants, agents, and affiliates, from any and all third party claims, liability, damages and/or costs (including, but not limited to, legal fees) arising from your use this Website or your breach of the Terms of Service.   Variation shall have the right in its absolute discretion at any time and without notice to amend, remove or vary the Services and/or any page of this Website.\n</div><div>&nbsp; &nbsp; &nbsp;Invalidity If any part of the Terms of Service is unenforceable (including any provision in which we exclude our liability to you) the enforceability of any other part of the Terms of Service will not be affected all other clauses remaining in full force and effect. So far as possible where any clause/sub-clause or part of a clause/sub-clause can be severed to render the remaining part valid, the clause shall be interpreted accordingly. Alternatively, you agree that the clause shall be rectified and interpreted in such a way that closely resembles the original meaning of the clause /sub-clause as is permitted by law.   \n</div><div>&nbsp; &nbsp; Complaints We operate a complaints handling procedure which we will use to try to resolve disputes when they first arise, please let us know if you have any complaints or comments.   Waiver If you breach these conditions and we take no action, we will still be entitled to use our rights and remedies in any other situation where you breach these conditions.   Entire Agreement The above Terms of Service constitute the entire agreement of the parties and supersede any and all preceding and contemporaneous agreements between you and . Any waiver of any provision of the Terms of Service will be effective only if in writing and signed by a Director of .&nbsp;</div></h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.co\">ПОДРОБНЕЕ</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.co\">ДЕМО</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rGzSlJH7ET",
+          "_anchor": "content4-p",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".row-links": {
+              "width": "100%",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
+            },
+            ".social-row": {
+              "width": "100%",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
+            },
+            ".media-container-row": {
+              "-webkit-flex-direction": "column",
+              "flex-direction": "column",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              ".foot-menu": {
+                "list-style": "none",
+                "display": "flex",
+                "-webkit-justify-content": "center",
+                "justify-content": "center",
+                "-webkit-flex-wrap": "wrap",
+                "flex-wrap": "wrap",
+                "padding": "0",
+                "margin-bottom": "0",
+                "li": {
+                  "padding": "0 1rem 1rem 1rem",
+                  "p": {
+                    "margin": "0"
+                  }
+                }
+              },
+              ".social-list": {
+                "padding-left": "0",
+                "margin-bottom": "0",
+                "list-style": "none",
+                "display": "flex",
+                "-webkit-flex-wrap": "wrap",
+                "flex-wrap": "wrap",
+                "-webkit-justify-content": "flex-end",
+                "justify-content": "flex-end",
+                ".mbr-iconfont-social": {
+                  "font-size": "1.5rem",
+                  "color": "#ffffff"
+                },
+                ".soc-item": {
+                  "margin": "0 .5rem"
+                },
+                "a": {
+                  "margin": "0",
+                  "opacity": ".5",
+                  "-webkit-transition": ".2s linear",
+                  "transition": ".2s linear",
+                  "&:hover": {
+                    "opacity": "1"
+                  }
+                },
+                "@media (max-width: 767px)": {
+                  "-webkit-justify-content": "center",
+                  "justify-content": "center"
+                }
+              },
+              ".row-copirayt": {
+                "word-break": "break-word",
+                "width": "100%",
+                "p": {
+                  "width": "100%"
+                }
+              }
+            }
+          },
+          "_name": "footer7",
+          "_customHTML": "<section group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Пункты меню\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Соцсети\" name=\"socialItems\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Эффект появления\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Цвет фона\" value=\"#2e2e2e\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"row row-links\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu\" mbr-list mbr-list-grow=\"menuItems\">\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"index.html\" class=\"text-white\">Home</a><br></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"policy.html\" class=\"text-white\">Private Policy</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"cookie.html\" class=\"text-white\">Cookie Policy</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"terms.html\" class=\"text-white\">Terms</a><br></li>\n                    \n                </ul>\n            </div>\n            <div class=\"row social-row\" mbr-if=\"socialItems > 0\">\n                <div mbr-list mbr-list-grow=\"socialItems\" class=\"social-list align-right pb-2\">\n                    <div class=\"soc-item\">\n                        <a href=\"https://twitter.com/\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-twitter socicon\"></span>\n                        </a>\n                    </div>\n                    \n                    \n                    \n                    \n                    \n                </div>\n            </div>\n            <div class=\"row row-copirayt\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\">\n                    © Copyright 2019 - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rGLEgP1xM8",
+          "_anchor": "footer7-s",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    },
+    "cookie.html": {
+      "settings": {
+        "meta_descr": "I think it’s more often than not that you’re correct. There are exceptions to the rule. I mean for instance, when we had a record company in Germany many years ago, the person who actually ran the record company was a true C.E.O. He was not an entrepreneur. ",
+        "title": "Cookie Policy",
+        "order": 3
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Кнопки\" name=\"showButtons\">\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\"><br>Cookie Policy</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\">Cookies consist of pieces of code installed in the browser that help the owner to provide the service in accordance with the described purposes. Some of the purposes for which cookies are set may also require User consent.\n<div>If the installation of cookies is based on consent, such consent may be freely revoked at any time in accordance with the instructions given in this document.\n</div><div>Technical cookies and cookies used for aggregate statistical purposes\n</div><div>* Activities strictly necessary for the operation of the service\n</div><div>* Activity on saving preferences, optimization and statistics\n</div><div>Other types of cookies or third parties that set cookies\n</div><div>Some of the services listed below collect statistics in an anonymous and aggregated form and may not require User consent or may be managed directly by the owner-depending on how they are described-without the assistance of third parties.\n</div><div>If any services operated by third parties are listed among the tools below, they may be used to track users ' browsing habits-in addition to the information provided herein and without the owner's knowledge. Please refer to the privacy policy of the listed services for details.\n</div><div>• Advertising\n</div><div>• Analytics\n</div><div>* Commercial affiliation\n</div><div>* Content and feature performance testing (A / B testing)\n</div><div>* Display content from external platforms\n</div><div>* Hosting and server infrastructure\n</div><div>* Infrastructure monitoring \n</div><div>* Interaction with external social networks and platforms\n</div><div>* Interact with the platforms, chat\n</div><div>* Remarketing and behavioral targeting\n</div><div>* Manage Tags\n</div><div>How to grant or revoke consent to the installation of cookies\n</div><div>In addition to what is stated in this document, the user can manage the cookie settings directly from their browser and prevent, for example, the installation of cookies by third parties.\n</div><div>Through your browser settings, you can also delete cookies that have been set in the past, including cookies that may have saved your initial consent to the installation of cookies on this website.\n</div><div>For example, users can find information about cookie management in the most commonly used browsers at the following addresses: Google Chrome, Mozilla Firefox, Apple Safari and Microsoft Internet Explorer.\n</div><div>With regard to cookies set by third parties, users can manage their preferences and withdraw their consent by clicking the appropriate opt-out link (if provided), using the means provided in the third party's privacy policy, or contacting the third party.\n</div><div>Notwithstanding the foregoing, owner informs that users may follow the instructions provided in relation to the related initiatives of EDAA (EU), network advertising initiative (USA) and digital advertising Alliance (USA), DAAC (Canada), DDAI (Japan) or other similar services. Such initiatives allow users to choose their tracking preferences for most advertising tools. Therefore, the owner recommends that users use these resources in addition to the information provided in this document.\n</div><div>Since the installation of third party cookies and other tracking systems through the services used in this application cannot be technically controlled by the owner, any specific links to cookies and tracking systems set by third parties should be considered indicative. For full information, the user should read the privacy policy of the relevant third-party services listed in this document. \n</div><div>Given the objective complexity of identifying cookie-based technologies, users are advised to contact the owner if they want more information about the use of cookies by this application.</div></h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.co\">ПОДРОБНЕЕ</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.co\">ДЕМО</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rGzSbeOcXP",
+          "_anchor": "content4-o",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".row-links": {
+              "width": "100%",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
+            },
+            ".social-row": {
+              "width": "100%",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
+            },
+            ".media-container-row": {
+              "-webkit-flex-direction": "column",
+              "flex-direction": "column",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              ".foot-menu": {
+                "list-style": "none",
+                "display": "flex",
+                "-webkit-justify-content": "center",
+                "justify-content": "center",
+                "-webkit-flex-wrap": "wrap",
+                "flex-wrap": "wrap",
+                "padding": "0",
+                "margin-bottom": "0",
+                "li": {
+                  "padding": "0 1rem 1rem 1rem",
+                  "p": {
+                    "margin": "0"
+                  }
+                }
+              },
+              ".social-list": {
+                "padding-left": "0",
+                "margin-bottom": "0",
+                "list-style": "none",
+                "display": "flex",
+                "-webkit-flex-wrap": "wrap",
+                "flex-wrap": "wrap",
+                "-webkit-justify-content": "flex-end",
+                "justify-content": "flex-end",
+                ".mbr-iconfont-social": {
+                  "font-size": "1.5rem",
+                  "color": "#ffffff"
+                },
+                ".soc-item": {
+                  "margin": "0 .5rem"
+                },
+                "a": {
+                  "margin": "0",
+                  "opacity": ".5",
+                  "-webkit-transition": ".2s linear",
+                  "transition": ".2s linear",
+                  "&:hover": {
+                    "opacity": "1"
+                  }
+                },
+                "@media (max-width: 767px)": {
+                  "-webkit-justify-content": "center",
+                  "justify-content": "center"
+                }
+              },
+              ".row-copirayt": {
+                "word-break": "break-word",
+                "width": "100%",
+                "p": {
+                  "width": "100%"
+                }
+              }
+            }
+          },
+          "_name": "footer7",
+          "_customHTML": "<section group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Пункты меню\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Соцсети\" name=\"socialItems\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Эффект появления\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Цвет фона\" value=\"#2e2e2e\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"row row-links\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu\" mbr-list mbr-list-grow=\"menuItems\">\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"index.html\" class=\"text-white\">Home</a><br></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"policy.html\" class=\"text-white\">Private Policy</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"cookie.html\" class=\"text-white\">Cookie Policy</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"terms.html\" class=\"text-white\">Terms</a><br></li>\n                    \n                </ul>\n            </div>\n            <div class=\"row social-row\" mbr-if=\"socialItems > 0\">\n                <div mbr-list mbr-list-grow=\"socialItems\" class=\"social-list align-right pb-2\">\n                    <div class=\"soc-item\">\n                        <a href=\"https://twitter.com/\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-twitter socicon\"></span>\n                        </a>\n                    </div>\n                    \n                    \n                    \n                    \n                    \n                </div>\n            </div>\n            <div class=\"row row-copirayt\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\">\n                    © Copyright 2019 - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rGLEgP1xM8",
+          "_anchor": "footer7-s",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    },
+    "policy.html": {
+      "settings": {
+        "meta_descr": "I think it’s more often than not that you’re correct. There are exceptions to the rule. I mean for instance, when we had a record company in Germany many years ago, the person who actually ran the record company was a true C.E.O. He was not an entrepreneur. ",
+        "title": "Privacy Policy",
+        "order": 1
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            }
+          },
+          "_name": "content4",
+          "_customHTML": "<section class=\"mbr-section content4\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Кнопки\" name=\"showButtons\">\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\"><br>Privacy Policy</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\">(\"we\",\" we \"or\" our\") operates the website (the\"service\"). \n<div>This page informs you of our policies regarding the collection, use and disclosure of personal data when you use our service and the choices you make with that data. Our privacy policy is for created by PrivacyPolicies.com privacy Policy generator. \n</div><div>We use your data to provide and improve the service. By using the service, you consent to the collection and use of information in accordance with this Policy. Unless otherwise defined in this privacy Policy, terms used in this privacy Policy have the same meaning as in our terms available from  \n</div><div>Collection And Use Of Information \n</div><div>We collect several different types of information for different purposes to provide and improve our service to you. \n</div><div>Types of data collected \n</div><div>personal data \n</div><div>When using our service, we may ask you to provide us with certain personal information that may be used to contact or identify you (\"personal data\"). Personal information may include, but is not limited to: \n</div><div>Email address \n</div><div>Cookies and usage data \n</div><div>usage data \n</div><div>We may also collect information about how the service is accessed and used (\"usage data\"). This usage data may include information such as your computer's Internet Protocol address (such as IP address), browser type, browser version, the pages of our service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data. \n</div><div>Tracking And Data Cookies \n</div><div>We use cookies and similar tracking technologies to track activity on our service and store certain information. \n</div><div>Cookies are files with a small amount of data that may contain an anonymous unique identifier. Cookies are sent to your browser from the website and stored on your device. Tracking technologies also use beacons, tags, and scripts to collect and track information, and to improve and analyze our service. \n</div><div>You can ask your browser to refuse all cookies or specify when a cookie is sent. However, if you do not accept cookies, you may not be able to use certain parts of our service. You can learn more about how to manage cookies in the cookies browser guide. \n</div><div>Examples of cookies we use: \n</div><div>Session Cookies. We use session cookies to operate our service. \n</div><div>Cookie Preferences. We use preference cookies to remember your preferences and preferences. \n</div><div>Security Cookies. We use cookies for security purposes. \n</div><div>use of data \n</div><div>uses the collected data for various purposes: \n</div><div>To provide and maintain the service \n</div><div>To notify you of changes to our service \n</div><div>To allow you to participate in interactive features of our service when you choose to do so \n</div><div>To provide customer service and support \n</div><div>Provide analysis or valuable information so we can improve the service \n</div><div>To monitor service usage \n</div><div>Detection, prevention and elimination of technical problems \n</div><div>data transmission \n</div><div>Your information, including personal information, may be transferred to and stored on computers located outside of your state, province, country or other governmental jurisdiction where data protection laws may differ from those of your jurisdiction. \n</div><div>If you are located outside the United States and choose to provide information to us, please note that we transfer data, including personal data, to the United States and process it there. \n</div><div>Your acceptance of this privacy Policy and subsequent provision of such information constitutes your consent to such transfer. \n</div><div>we will take all steps reasonably necessary to ensure the safe handling of your data in accordance with this privacy Policy, and no transfer of your personal data will take place to an entity or country unless proper controls are in place, including the security of your data and other personal information. \n</div><div>Disclosure \n</div><div>legal norm \n</div><div>may disclose your personal information in the good faith belief that such action is necessary to: \n</div><div>To fulfill a legal obligation \n</div><div>To protect and defend rights or property \n</div><div>To prevent or investigate possible wrongdoing in connection with the service \n</div><div>To protect the personal safety of service users or the public \n</div><div>To protect against legal liability \n</div><div>data security \n</div><div>The security of your data is important to us, but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect Your personal information, we cannot guarantee its absolute security. \n</div><div>service sector \n</div><div>We may hire third-party companies and individuals to facilitate the provision of our services (\"service providers\"), to provide services on our behalf, to perform services related to the service, or to assist us in analyzing the use of our services. \n</div><div>These third parties have access to your personal data only to perform these tasks on our behalf and are required not to disclose or use it for any other purpose. \n</div><div>Links To Other Sites \n</div><div>Our service may contain links to other sites that are not operated by us. If you click on a third party link, you will be redirected to that third party's website. We strongly encourage you to read the privacy policy of each site you visit. \n</div><div>We do not control and are not responsible for the content, privacy policies or practices of any third party sites or services. \n</div><div>Privacy for children \n</div><div>Our service does not reach out to anyone under the age of 18 (\"children\"). \n</div><div>We do not knowingly collect personal information from anyone under the age of 18. If you are a parent or guardian and you know that your children have provided us with personal information, please contact us. If we become aware that we have collected children's personal information without parental consent, we will take steps to remove that information from our servers. \n</div><div>Changes To This Privacy Policy \n</div><div>We may update our privacy policy from time to time. We will notify you of any changes by posting the new privacy Policy on this page. \n</div><div>We will notify you by email and / or prominent notice on our service before the changes take effect and update the \"effective date\" at the top of this privacy policy. \n</div><div>We encourage you to periodically review this privacy policy for any changes. Changes to this privacy Policy will be effective upon posting on this page. \n</div><div>contact us\n</div><div>If you have any questions about this privacy policy, please do.</div></h3>\n                <div class=\"mbr-section-btn align-center py-4\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.co\">ПОДРОБНЕЕ</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.co\">ДЕМО</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rGzRPwmO3l",
+          "_anchor": "content4-n",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".row-links": {
+              "width": "100%",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
+            },
+            ".social-row": {
+              "width": "100%",
+              "-webkit-justify-content": "center",
+              "justify-content": "center"
+            },
+            ".media-container-row": {
+              "-webkit-flex-direction": "column",
+              "flex-direction": "column",
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "-webkit-align-items": "center",
+              "align-items": "center",
+              ".foot-menu": {
+                "list-style": "none",
+                "display": "flex",
+                "-webkit-justify-content": "center",
+                "justify-content": "center",
+                "-webkit-flex-wrap": "wrap",
+                "flex-wrap": "wrap",
+                "padding": "0",
+                "margin-bottom": "0",
+                "li": {
+                  "padding": "0 1rem 1rem 1rem",
+                  "p": {
+                    "margin": "0"
+                  }
+                }
+              },
+              ".social-list": {
+                "padding-left": "0",
+                "margin-bottom": "0",
+                "list-style": "none",
+                "display": "flex",
+                "-webkit-flex-wrap": "wrap",
+                "flex-wrap": "wrap",
+                "-webkit-justify-content": "flex-end",
+                "justify-content": "flex-end",
+                ".mbr-iconfont-social": {
+                  "font-size": "1.5rem",
+                  "color": "#ffffff"
+                },
+                ".soc-item": {
+                  "margin": "0 .5rem"
+                },
+                "a": {
+                  "margin": "0",
+                  "opacity": ".5",
+                  "-webkit-transition": ".2s linear",
+                  "transition": ".2s linear",
+                  "&:hover": {
+                    "opacity": "1"
+                  }
+                },
+                "@media (max-width: 767px)": {
+                  "-webkit-justify-content": "center",
+                  "justify-content": "center"
+                }
+              },
+              ".row-copirayt": {
+                "word-break": "break-word",
+                "width": "100%",
+                "p": {
+                  "width": "100%"
+                }
+              }
+            }
+          },
+          "_name": "footer7",
+          "_customHTML": "<section group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Пункты меню\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Соцсети\" name=\"socialItems\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Эффект появления\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Цвет фона\" value=\"#2e2e2e\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"row row-links\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu\" mbr-list mbr-list-grow=\"menuItems\">\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"index.html\" class=\"text-white\">Home</a><br></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"policy.html\" class=\"text-white\">Private Policy</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"cookie.html\" class=\"text-white\">Cookie Policy</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"terms.html\" class=\"text-white\">Terms</a><br></li>\n                    \n                </ul>\n            </div>\n            <div class=\"row social-row\" mbr-if=\"socialItems > 0\">\n                <div mbr-list mbr-list-grow=\"socialItems\" class=\"social-list align-right pb-2\">\n                    <div class=\"soc-item\">\n                        <a href=\"https://twitter.com/\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-twitter socicon\"></span>\n                        </a>\n                    </div>\n                    \n                    \n                    \n                    \n                    \n                </div>\n            </div>\n            <div class=\"row row-copirayt\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\">\n                    © Copyright 2019 - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rGLEgP1xM8",
+          "_anchor": "footer7-s",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
